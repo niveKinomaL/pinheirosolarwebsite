@@ -11,9 +11,16 @@ export default {
 
       xl: "1280px",
     },
-    extend: {},
+
+    extend: {
+      colors: {
+        bluePinheiro: "#0D3A83",
+        darkBluePinheiro: "#0D1D41",
+        orangePinheiro: "#F8A302",
+      },
+    },
     fontFamily: {
-      comfortaa: ["Comfortaa", "cursive"],
+      Arimo: ["Arimo", "sans-serif"],
     },
   },
   plugins: [],

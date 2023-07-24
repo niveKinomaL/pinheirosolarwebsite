@@ -1,32 +1,35 @@
 import React from "react";
-import cube from "../assets/cube.png";
+import bg1top from "../assets/bg1top.png";
+import { BsFillArrowRightCircleFill } from "react-icons/bs";
 
 const Home = () => {
+  {
+    /*Top*/
+  }
   return (
-    <div className="h-full flex text-slate-300 items-center sm:text-center md:text-left sm:justify-center md:justify-between font-bold sm:flex-col md:flex-row bg-gradient-to-r font-comfortaa from-blue-950 to to-black">
-      <div className="md:ml-28 sm:mt-10">
-        <p className="mb-4 flex sm:justify-center md:justify-normal items-center">
-          <div className="w-40  opacity-50 h-0.5 rounded-full bg-white sm:hidden md:inline"></div>
-          <p className=" md:ml-5">Data smarter, not harder</p>
-        </p>
-        <h1 className="mb-4 text-4xl">
-          It's never been easier to
-          <u className="text-cyan-300 opacity-80">protect</u> yout data
-        </h1>
-        <p className="mb-6 text-slate-500">
-          Complex system of data collection and improvement of cyber defenses,
-          using artificial intelligence for remote monitoring of servers.
-        </p>
-        <div className="flex sm:flex-col items-center md:flex-row gap-5">
-          <button className="bg-gradient-to-r from-cyan-400 to-blue-950 hover:px-12 duration-200 outline-none transition-all  sm:w-2/3 md:px-10 rounded-full">
-            Request Sign up
-          </button>
-          <a href="#" className="underline">
-            Services
-          </a>
+    <div
+      className="transition-all ease-in-out duration-700 sm:h-96 md:h-screen flex flex-col sm:items-center md:items-start justify-center bg-cover bg-no-repeat"
+      style={{ backgroundImage: `url(${bg1top})` }}
+    >
+      <div className="md:mb-44 text-center md:justify-normal sm:items-center md:items-start sm:justify-center sm:flex sm:flex-col">
+        <div className="font-Arimo md:text-4xl sm:text-2xl xl:text-6xl  md:ml-20 mb-7 px-10 text-white font-extrabold bg-bluePinheiro w-fit p-4 rounded-2xl">
+          <h1 className="text-left">
+            A solução é energia solar.
+            <br />
+            Energia solar é{" "}
+            <span className="text-orangePinheiro">Pinheiro</span>
+            <br />
+            <span className="text-orangePinheiro">Solar!</span>
+          </h1>
         </div>
+        <div className="flex sm:justify-center md:justify-normal flex-row">
+          <div className="w-40 rounded-full md:ml-20 h-1 bg-orangePinheiro"></div>
+          <div className="w-12 rounded-full sm:ml-5 md:ml-5 h-1 bg-orangePinheiro"></div>
+        </div>
+        <button className="font-Arimo flex items-center w-fit  hover:px-10 hover:bg-bluePinheiro transition-all ease-linear text-white md:ml-20 mt-10 font-bold text-xl bg-orangePinheiro rounded-md px-8 py-3">
+          Conheça a Pinheiro <BsFillArrowRightCircleFill className="ml-4" />
+        </button>
       </div>
-      <img src={cube} className="sm:hidden md:inline w-8/12" alt="" />
     </div>
   );
 };
