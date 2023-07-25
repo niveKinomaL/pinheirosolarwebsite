@@ -34,7 +34,7 @@ const MiddleFiveSlashSix = () => {
           alt=""
         />
       </div>
-      <button className="bg-orangePinheiro px-8 py-3 hover:px-10 duration-300 transition-all mt-20 mb-20 rounded-xl text-white">
+      <button className="sm:bg-white md:bg-orangePinheiro px-8 py-3 hover:px-10 duration-300 transition-all mt-20 mb-20 rounded-xl sm:text-orangePinheiro md:text-white">
         Inscreva-se no nosso canal
       </button>
     </div>

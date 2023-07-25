@@ -10,6 +10,7 @@ import MiddleThreeSlashSix from "./components/MiddleThreeSlashSix";
 import MiddleFourSlashSix from "./components/MiddleFourSlashSix";
 import MiddleFiveSlashSix from "./components/MiddleFiveSlashSix";
 import MiddleSixSlashSix from "./components/MiddleSixSlashSix";
+import Footer from "./components/footer";
 
 export default function App() {
   return (
@@ -29,6 +30,7 @@ export default function App() {
               <MiddleFourSlashSix />
               <MiddleFiveSlashSix />
               <MiddleSixSlashSix />
+              <Footer />
             </>
           }
         />
