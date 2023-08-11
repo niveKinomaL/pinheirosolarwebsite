@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Home from "./components/Home";
@@ -11,33 +10,45 @@ import MiddleFourSlashSix from "./components/MiddleFourSlashSix";
 import MiddleFiveSlashSix from "./components/MiddleFiveSlashSix";
 import MiddleSixSlashSix from "./components/MiddleSixSlashSix";
 import Footer from "./components/footer";
+import Quemsomos from "./Pages/Quemsomos";
+import QuemsomosMiddlepart from "./components/QuemsomosMiddlepart";
 
-export default function App() {
+function App() {
   return (
-    <BrowserRouter>
-      <TopBar />
-      <NavBar />
-      <Routes>
-        <Route
-          exact
-          path="/"
-          element={
-            <>
-              <Home />
-              <MiddleOneSlashSix />
-              <MiddleTwoSlashSix />
-              <MiddleThreeSlashSix />
-              <MiddleFourSlashSix />
-              <MiddleFiveSlashSix />
-              <MiddleSixSlashSix />
-              <Footer />
-            </>
-          }
-        />
-      </Routes>
-    </BrowserRouter>
+    <div>
+      <BrowserRouter>
+        <TopBar />
+        <NavBar />
+        <Routes>
+          <Route
+            exact
+            path="/"
+            element={
+              <>
+                <Home />
+                <MiddleOneSlashSix />
+                <MiddleTwoSlashSix />
+                <MiddleThreeSlashSix />
+                <MiddleFourSlashSix />
+                <MiddleFiveSlashSix />
+                <MiddleSixSlashSix />
+              </>
+            }
+          />
+          <Route
+            path="/Quemsomos"
+            element={
+              <>
+                <Quemsomos />
+                <QuemsomosMiddlepart />
+              </>
+            }
+          />
+        </Routes>
+      </BrowserRouter>
+      <Footer />
+    </div>
   );
 }
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App />);
+export default App;
