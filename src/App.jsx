@@ -12,10 +12,13 @@ import MiddleSixSlashSix from "./components/MiddleSixSlashSix";
 import Footer from "./components/footer";
 import Quemsomos from "./Pages/Quemsomos";
 import QuemsomosMiddlepart from "./components/QuemsomosMiddlepart";
+import VideosMiddleFiveSix from "./components/VideosMiddleFiveSix";
+import PrincipleWork from "./components/PrincipleWork";
+import FinalPageQuemSomos from "./components/FinalPageQuemSomos";
 
 function App() {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <BrowserRouter>
         <TopBar />
         <NavBar />
@@ -41,6 +44,9 @@ function App() {
               <>
                 <Quemsomos />
                 <QuemsomosMiddlepart />
+                <VideosMiddleFiveSix />
+                <PrincipleWork />
+                <FinalPageQuemSomos />
               </>
             }
           />
