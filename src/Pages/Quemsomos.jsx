@@ -1,6 +1,7 @@
 import React from "react";
 import quemsomosbg from "../assets/QuemSomos.png";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const Quemsomos = () => {
   return (
@@ -61,9 +62,11 @@ const Quemsomos = () => {
             muita eficácia para atender e satisfazer a necessidade dos nossos
             clientes.
           </p>
-          <button className="font-Arimo sm:mb-10 md:mb-0 md:mt-5 flex w-44  items-center hover:px-6 hover:bg-bluePinheiro transition-all ease-linear text-white font-bold text-sm bg-orangePinheiro rounded-md px-5 gap-2 py-3">
-            Nossos Projetos <BsFillArrowRightCircleFill className="" />
-          </button>
+          <Link to={"/Projetos"}>
+            <button className="font-Arimo sm:mb-10 md:mb-0 md:mt-5 flex w-44  items-center hover:px-6 hover:bg-bluePinheiro transition-all ease-linear text-white font-bold text-sm bg-orangePinheiro rounded-md px-5 gap-2 py-3">
+              Nossos Projetos <BsFillArrowRightCircleFill className="" />
+            </button>
+          </Link>
         </div>
         <div className="flex-1 flex justify-end">
           <img

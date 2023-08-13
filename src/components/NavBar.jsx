@@ -35,19 +35,34 @@ const NavBar = () => {
           )}
           <ul className="md:flex sm:hidden flex-row flex-wrap gap-10 md:pr-10 xl:pr-44">
             <Link to={"/Quemsomos"}>
-              <li>Quem Somos</li>
+              <li className="relative group">
+                Quem Somos
+                <span className="absolute bottom-[-3px] left-0 w-full h-0.5 bg-orangePinheiro origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform ease-out duration-300"></span>
+              </li>
             </Link>
             <Link to={"/Projetos"}>
-              <li>Projetos</li>
+              <li className="relative group">
+                Projetos
+                <span className="absolute bottom-[-3px] left-0 w-full h-0.5 bg-orangePinheiro origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform ease-out duration-300"></span>
+              </li>
             </Link>
             <Link to={"/Servicos"}>
-              <li>Serviços</li>
+              <li className="relative group">
+                Serviços
+                <span className="absolute bottom-[-3px] left-0 w-full h-0.5 bg-orangePinheiro origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform ease-out duration-300"></span>
+              </li>
             </Link>
             <Link to={"/Etica"}>
-              <li>Ética</li>
+              <li className="relative group">
+                Ética
+                <span className="absolute bottom-[-3px] left-0 w-full h-0.5 bg-orangePinheiro origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform ease-out duration-300"></span>
+              </li>
             </Link>
             <Link to={"/Contato"}>
-              <li>Contato</li>
+              <li className="relative group">
+                Contato
+                <span className="absolute bottom-[-3px] left-0 w-full h-0.5 bg-orangePinheiro origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform ease-out duration-300"></span>
+              </li>
             </Link>
           </ul>
         </div>
@@ -58,11 +73,21 @@ const NavBar = () => {
             isClicked ? "sm:flex" : "sm:hidden"
           }`}
         >
-          <li>Quem Somos</li>
-          <li>Projetos</li>
-          <li>Serviços</li>
-          <li>Ética</li>
-          <li>Contato</li>
+          <Link to={"Quemsomos"}>
+            <li>Quem Somos</li>
+          </Link>
+          <Link to={"Projetos"}>
+            <li>Projetos</li>
+          </Link>
+          <Link to={"Servicos"}>
+            <li>Serviços</li>
+          </Link>
+          <Link to={"Etica"}>
+            <li>Ética</li>
+          </Link>
+          <Link to={"Contato"}>
+            <li>Contato</li>
+          </Link>
         </ul>
       </div>
     </div>

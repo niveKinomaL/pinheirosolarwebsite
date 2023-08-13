@@ -1,6 +1,7 @@
 import React from "react";
 import bg4middle from "../assets/bg4middle.png";
 import Carousel from "./Carousel";
+import { Link } from "react-router-dom";
 
 const MiddleFourSlashSix = () => {
   return (
@@ -16,9 +17,11 @@ const MiddleFourSlashSix = () => {
         </div>
       </div>
       <Carousel />
-      <button className="bg-white px-8 py-3 hover:px-10 duration-300 transition-all mt-10 mb-10 rounded-xl text-orangePinheiro">
-        Ver mais projetos
-      </button>
+      <Link to={"/Projetos"}>
+        <button className="bg-white px-8 py-3 hover:px-10 duration-300 transition-all mt-10 mb-10 rounded-xl text-orangePinheiro">
+          Ver mais projetos
+        </button>
+      </Link>
     </div>
   );
 };

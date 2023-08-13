@@ -15,6 +15,8 @@ import QuemsomosMiddlepart from "./components/QuemsomosMiddlepart";
 import VideosMiddleFiveSix from "./components/VideosMiddleFiveSix";
 import PrincipleWork from "./components/PrincipleWork";
 import FinalPageQuemSomos from "./components/FinalPageQuemSomos";
+import Projetos from "./Pages/Projetos";
+import Etica from "./Pages/Etica";
 
 function App() {
   return (
@@ -47,6 +49,23 @@ function App() {
                 <VideosMiddleFiveSix />
                 <PrincipleWork />
                 <FinalPageQuemSomos />
+              </>
+            }
+          />
+          <Route
+            path="/Projetos"
+            element={
+              <>
+                <Projetos />
+              </>
+            }
+          />
+          <Route
+            path="/Etica"
+            element={
+              <>
+                <Etica />
+                <MiddleSixSlashSix />
               </>
             }
           />

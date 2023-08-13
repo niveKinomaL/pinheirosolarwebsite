@@ -1,6 +1,7 @@
 import React from "react";
 import manFixingSolar from "../assets/manFixingSolarPanel.png";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const MiddleOneSlashSix = () => {
   return (
@@ -20,9 +21,11 @@ const MiddleOneSlashSix = () => {
           processos de maneira mais rápida e segura, com redução de custos e
           melhor qualidade.
         </p>
-        <button className="font-Arimo flex w-fit items-center hover:px-10 hover:bg-bluePinheiro transition-all ease-linear text-white font-bold text-xl bg-orangePinheiro rounded-md px-8 py-3">
-          Conheça a Pinheiro <BsFillArrowRightCircleFill className="ml-4" />
-        </button>
+        <Link to={"/Quemsomos"}>
+          <button className="font-Arimo flex w-fit items-center hover:px-10 hover:bg-bluePinheiro transition-all ease-linear text-white font-bold text-xl bg-orangePinheiro rounded-md px-8 py-3">
+            Conheça a Pinheiro <BsFillArrowRightCircleFill className="ml-4" />
+          </button>
+        </Link>
       </div>
       <img
         src={manFixingSolar}

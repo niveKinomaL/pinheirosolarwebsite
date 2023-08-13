@@ -1,6 +1,7 @@
 import React from "react";
 import bg1top from "../assets/bg1top.png";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   {
@@ -26,9 +27,11 @@ const Home = () => {
           <div className="w-40 rounded-full md:ml-20 h-1 bg-orangePinheiro"></div>
           <div className="w-12 rounded-full sm:ml-5 md:ml-5 h-1 bg-orangePinheiro"></div>
         </div>
-        <button className="font-Arimo flex items-center w-fit  hover:px-10 hover:bg-bluePinheiro transition-all ease-linear text-white md:ml-20 mt-10 font-bold text-xl bg-orangePinheiro rounded-md px-8 py-3">
-          Conheça a Pinheiro <BsFillArrowRightCircleFill className="ml-4" />
-        </button>
+        <Link to={"/Quemsomos"}>
+          <button className="font-Arimo flex items-center w-fit  hover:px-10 hover:bg-bluePinheiro transition-all ease-linear text-white md:ml-20 mt-10 font-bold text-xl bg-orangePinheiro rounded-md px-8 py-3">
+            Conheça a Pinheiro <BsFillArrowRightCircleFill className="ml-4" />
+          </button>
+        </Link>
       </div>
     </div>
   );
