@@ -17,7 +17,7 @@ const Etica = () => {
           Este é o canal oficial para orientações sobre questões de ordem moral
           ou legal.
         </h1>
-        <p className="font-thin sm:text-center md:text-justify text-xl md:w-5/12">
+        <p className="font-thin sm:text-center md:text-left text-xl md:w-5/12">
           Assim, como meio de comunicação para que sejam denunciadas, de forma
           anônima ou identificada, quaisquer condutas que violem os preceitos
           estabelecidos no Código de Ética e Conduta da Taldi. Garantimos o
@@ -29,7 +29,7 @@ const Etica = () => {
           relatado irregularidades de boa-fé.
         </p>
         <div className="flex md:flex-row sm:flex-col sm:ml-10 md:ml-0 mt-10 gap-10">
-          <div className="text-center bg-orangePinheiro shadow-xl items-center flex flex-col justify-center rounded-2xl h-36 w-56 ">
+          <div className="text-center bg-orangePinheiro shadow-xl items-center flex flex-col justify-center rounded-2xl h-44 w-56 ">
             <h1 className="text-2xl font-extrabold text-white">
               Relatar uma preocupação
             </h1>
@@ -37,7 +37,7 @@ const Etica = () => {
               Relatar <BsFillArrowRightCircleFill className="ml-4" />
             </button>
           </div>
-          <div className="text-center bg-bluePinheiro shadow-xl items-center flex flex-col justify-center rounded-2xl h-36 w-56 ">
+          <div className="text-center bg-bluePinheiro shadow-xl items-center flex flex-col justify-center rounded-2xl h-44 w-56 ">
             <h1 className="text-2xl font-extrabold text-white">
               Acompanhar um relato
             </h1>

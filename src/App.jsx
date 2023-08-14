@@ -17,6 +17,9 @@ import PrincipleWork from "./components/PrincipleWork";
 import FinalPageQuemSomos from "./components/FinalPageQuemSomos";
 import Projetos from "./Pages/Projetos";
 import Etica from "./Pages/Etica";
+import ContactUs from "./Pages/ContactUs";
+import Services from "./Pages/Services";
+import WhatsappComp from "./components/WhatsappComp";
 
 function App() {
   return (
@@ -24,6 +27,7 @@ function App() {
       <BrowserRouter>
         <TopBar />
         <NavBar />
+        <WhatsappComp />
         <Routes>
           <Route
             exact
@@ -66,6 +70,22 @@ function App() {
               <>
                 <Etica />
                 <MiddleSixSlashSix />
+              </>
+            }
+          />
+          <Route
+            path="/Contato"
+            element={
+              <>
+                <ContactUs />
+              </>
+            }
+          />
+          <Route
+            path="/Servicos"
+            element={
+              <>
+                <Services />
               </>
             }
           />
